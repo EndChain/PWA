@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import VueQrcodeReader from 'vue-qrcode-reader'
 
 Vue.use(Vuetify)
 
@@ -17,3 +18,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+Vue.use(VueQrcodeReader)

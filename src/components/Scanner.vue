@@ -3,18 +3,36 @@
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
         <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+        <qrcode-reader @decode="onDecode"></qrcode-reader>
+        <h3>{{ decodedUrl }}</h3>
       </v-layout>
     </v-slide-y-transition>
   </v-container>
 </template>
+
+
+
+<script>
+import { QrcodeReader } from 'vue-qrcode-reader'
+export default {
+  name: 'Scanner',
+  components: {
+    QrcodeReader
+  },
+  data () {
+    return {
+      decodedUrl: ''
+    }
+  },
+  methods: {
+    onDecode (decodedString) {
+      this.decodedUrl = decodedString
+      console.log(decodedString)
+    }
+  }
+}
+</script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

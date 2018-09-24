@@ -74,16 +74,16 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [{
         icon: 'bubble_chart',
-        title: 'Inspire'
+        title: 'Reset'
       }],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'EndChain Scanner'
     }
   },
   name: 'App'
