@@ -11,7 +11,6 @@
 </template>
 
 
-
 <script>
 import { QrcodeReader } from 'vue-qrcode-reader'
 export default {
