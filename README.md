@@ -2,6 +2,8 @@
 
 > A PWA for scanning EndChain codes
 
+> Try it here : [Scanner](https://endchain-scn.firebaseapp.com)
+
 ## Build Setup
 
 ``` bash
