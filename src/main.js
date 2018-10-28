@@ -11,6 +11,18 @@ Vue.use(Vuetify)
 
 Vue.config.productionTip = false
 
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCey-KpxjFuYxATIK4ffNahH21TQi4rW6M",
+  authDomain: "endchain-scn.firebaseapp.com",
+  databaseURL: "https://endchain-scn.firebaseio.com",
+  projectId: "endchain-scn",
+  storageBucket: "endchain-scn.appspot.com",
+  messagingSenderId: "383848789308"
+};
+
+firebase.initializeApp(config)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
